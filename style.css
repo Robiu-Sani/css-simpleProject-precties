@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* ------------------------heaher section style start here -------------------------- */
+body{
+    background: black;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+/* ----------menu bar work start here ----------------- */
+.menuContainer{
+    max-width: 950px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+}
+.logo img{
+    height: 100%;
+    padding: 5px;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-weight: 550;
+    transition: .2s;
+}
+.menu ul li a:hover{
+    color: #f58b20;
+}
+/* ----------menu bar work end here ----------------- */
+
+.bodyTextContainer{
+    max-width: 950px;
+    padding-top: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bodyTextContainer h1{
+    font-size: 58px;
+    color: #fff;
+    font-family: Arial Black;
+}
+.bodyTextContainer h3{
+    color: #fff;
+    line-height: 38px;
+    margin: 40px 10px;
+    font-size: 25px;
+    padding: 40px 10px;
+}
+.bodyTextContainer button{
+    border: 0;
+    outline: 0;
+    padding: 3px 7px 7px 3px;
+    background: #f58b20;
+    border-radius: 30px;
+    height: 75px;
+}
+.bodyTextContainer button span{
+    padding: 15px;
+    font-size: 25px;
+    font-family: arial black;
+    color: #fff;
+    background: #000;
+    border-radius: 25px;
+}
+.bodyTextContainer button span:hover{
+    background: transparent;
+    transition: .5s;
+}
+/* ------------------------heaher section style end here -------------------------- */
+
+
+
+/* -------------------------- all section style start here ------------------------ */
+.sectionBody{
+    max-width: 950px;
+    margin: auto;
+    padding-top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sectionBody h3{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 600;
+}
+.line{
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(0deg, #fff,rgb(39, 39, 39),#000,#000,rgb(39, 39, 39),#fff);
+    border-radius: 20%;
+    height: 1050px;
+}
+.sercal1,.sercal2{
+    width: 35px;
+    height: 35px;
+    background: #000;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    position: absolute;
+}
+.sercal1{
+    top: 400px;
+}
+.sercal2{
+    top: 800px;
+}
+.imgBox{
+    width: 450px;
+    height: 340px;
+    position: absolute;
+    top: 435px;
+    left: 0;
+    padding: 5px;
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.img-box{
+    width: 440px;
+    height: 340px;
+    position: absolute;
+    top: 435px;
+    left: 5px;
+	line-height:0;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.26)),url(images/section1img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow:hidden;
+	position:relative;
+}
+.topBar{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(58, 58, 58);
+    padding: 5px;
+    z-index: 500;
+}
+.img-wrap{
+	width:80px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+    height: 91%;
+}
+.span{
+	width:1px;
+	height:100%;
+	cursor:ew-resize;
+	background:#fff;
+	position:absolute;
+	left:80px;
+	top:0;
+}
+.arrow{
+	width:40px;
+	position:absolute;
+	top:50%;
+	margin-left:-20px;
+	margin-top:-20px;
+}
+.textContainer{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.479);
+    width: 450px;
+    position: absolute;
+    top: 830px;
+    right: 0;
+    padding: 5px;
+}
+.textContainer h4{
+    font-size: 30px;
+}
+.textContainer p{
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.blank{
+    height: 100px;
+    width: 100%;
+}
+/* -------------------------- all section style end here ------------------------ */
+
+
+
+/* -------------------------- footer section style start here ------------------------ */
+footer{
+    width: 100%;
+    background: #ffeded;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+.footerLogo{
+    width: 20%;
+}
+.footerLogo img{
+    width: 200px;
+}
+.footerMenu{
+    width: 20%;
+}
+.footerMenu p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.footerMenu ul li{
+    list-style: none;
+    margin: 15px 0px;
+}
+.footerMenu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+}
+.footerMenu ul li a:hover{
+    color: #f58b20;
+    transition: .2s;
+}
+.copy{
+    width: 100%;
+    background: #ffeded;
+    border-bottom:  1px solid rgb(138, 138, 138);
+    color: rgb(94, 94, 94);
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* -------------------------- all section style end here ------------------------ */
+
+/* ---js colling class here ---- */
+.div{
+    position: absolute;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* ---js colling class here ---- */
